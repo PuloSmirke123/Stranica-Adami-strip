@@ -1,1 +1,1 @@
-# Stranica-Adami-strip
+# Stranica-Adamic-strip
