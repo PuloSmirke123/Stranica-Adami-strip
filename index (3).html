@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SŠ Ljudevita Andrije Adamića - Webstrip</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* SŠ Ljudevita Andrije Adamića Paleta Boja */
+        :root {
+            --tamno-plava: #0D1B2A;
+            --tirkizna: #00B4D8;
+            --svijetlo-tirkizna: #90E0EF;
+            --bijela: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--tamno-plava);
+            color: var(--bijela);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--tirkizna);
+            background-color: rgba(13, 27, 42, 0.95);
+        }
+
+        header h1 {
+            color: var(--bijela);
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--tirkizna);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        /* Kontejner spreman za naknadno ubacivanje stripa */
+        .strip-container {
+            width: 100%;
+            max-width: 900px;
+            border: 2px dashed var(--tirkizna);
+            border-radius: 12px;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            background-color: rgba(0, 180, 216, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .strip-container p {
+            color: var(--svijetlo-tirkizna);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 1px solid rgba(0, 180, 216, 0.3);
+            color: var(--svijetlo-tirkizna);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ZAGLAVLJE -->
+    <header>
+        <h1>SREDNJA ŠKOLA LJUDEVITA ANDRIJE ADAMIĆA</h1>
+        <p>Službena Webstrip Stranica</p>
+    </header>
+
+    <!-- GLAVNI SADRŽAJ (Mjesto za strip) -->
+    <main>
+        <div class="strip-container">
+            <p>Mjesto pripremljeno za strip. Čekamo završetak radova!</p>
+        </div>
+    </main>
+
+    <!-- PODNOŽJE -->
+    <footer >
+        <p>&copy; Srednja škola Ljudevita Andrije Adamića</p>
+    </footer>
+
+</body>
+</html>
